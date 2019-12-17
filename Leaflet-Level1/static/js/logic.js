@@ -86,7 +86,7 @@ var baseMaps = {
     Outdoors: out,
 };
 
-L.control.layers(baseMaps).addTo(map);
+L.control.layers(baseMaps, null, {collapsed: false}).addTo(map);
 
 var legend = L.control({position: 'bottomright'});
 

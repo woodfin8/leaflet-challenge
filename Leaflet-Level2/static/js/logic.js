@@ -83,7 +83,7 @@ d3.json(link, function (data) {
                 radius: (feature.properties.mag) * 20000
             });
         }
-    }).addTo(layers.Tectonic_Plates);
+    }).addTo(layers.Earthquakes);
 
 });
 
@@ -119,7 +119,7 @@ var baseMaps = {
 
 
 
-L.control.layers(baseMaps, overlays).addTo(map);
+L.control.layers(baseMaps, overlays, {collapsed: false}).addTo(map);
 
 var legend = L.control({ position: 'bottomright' });
 
